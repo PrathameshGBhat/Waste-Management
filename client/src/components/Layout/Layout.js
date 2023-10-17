@@ -6,7 +6,7 @@ const Layout = (porps) => {
   return (
     <div>
       <Header />
-      <main style={{ minHeight: "80vh" }}>{porps.children}</main>
+      <main style={{ minHeight: "85vh" }}>{porps.children}</main>
       <Footer />
     </div>
   );

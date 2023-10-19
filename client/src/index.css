@@ -16,7 +16,7 @@
   text-transform: uppercase;
   box-shadow: 0 8px 6px -6px cyan;
   --webkit-box-shadow: 0 8px 6px -6px gray;
-  border-borrom: 0px solid gray !important;
+  border-bottom: 0px solid gray !important;
 }
 
 .nav-link {
@@ -43,4 +43,15 @@
     #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #434343, #000000);
+}
+
+/*=================================================================
+==============================register page*/
+.register{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  height: 70hv;
+  flex-direction: column;
 }

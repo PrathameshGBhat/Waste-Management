@@ -8,6 +8,29 @@
 /* font-family: 'Playfair Display', serif; */
 /* font-family: 'Poppins', sans-serif; */
 
+/* Page not found */
+
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+.pnf-heading {
+  font-weight: normal;
+}
+.pnf-btn {
+  color: black;
+  border: 1px solid cyan;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
 /* navbar css */
 .navbar {
   font-family: "Poppins", sans-serif;
@@ -45,6 +68,7 @@
   background: linear-gradient(to right, #434343, #000000);
 }
 
+<<<<<<< HEAD
 /*=================================================================
 ==============================register page*/
 .register{
@@ -55,3 +79,15 @@
   height: 70hv;
   flex-direction: column;
 }
+=======
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+>>>>>>> a2bd7571ae28d50251bc44118e0f7206cb081be2

@@ -13,7 +13,7 @@ const AboutUs = () => {
           />
         </div>
         <div className="col-md-4">
-          <p className="text-justify mt-2 ">
+          <p className="text-justify mt-4 ">
             <p>Students of CSE Branch 2nd Year</p>
             <p>Developers:</p>
             <ul>

@@ -1,13 +1,13 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
-
+import Since2022 from "../images/Since2022.png"
 const AboutUs = () => {
   return (
     <Layout title={"About us"}>
       <div className="row aboutus">
         <div className="col-md-6 ">
-          <img
-            src="/images/about us.png"
+          <img className="logo"
+            src={Since2022}
             alt="contactus"
             style={{ width: "75%" }}
           />
@@ -19,7 +19,6 @@ const AboutUs = () => {
             <ul>
               <p>Prathamesh</p>
               <p>Sujeeth</p>
-              <p>Nitin</p>
             </ul>
           </p>
         </div>

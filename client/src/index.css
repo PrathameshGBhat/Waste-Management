@@ -68,10 +68,6 @@
   background: linear-gradient(to right, #434343, #000000);
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 652c7d130ad404f9ea5e55694578777ab9a92862
 /*=================================================================
 ==============================register page*/
 .register {
@@ -93,14 +89,27 @@
   color: #ffefba;
   border-bottom: 1px solid #ffefba;
 }
-<<<<<<< HEAD
-=======
 
-.card{
+.card {
   height: 100%;
   transition: all 0.3s;
 }
 .card:hover {
   transform: scale(1.15);
 }
->>>>>>> 652c7d130ad404f9ea5e55694578777ab9a92862
+
+.contactus {
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  height: 60vh;
+  width: 50vh;
+  
+}
+
+.aboutus {
+  align-items: center;
+  justify-content: center;
+}

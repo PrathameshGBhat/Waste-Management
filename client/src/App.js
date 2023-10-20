@@ -5,10 +5,13 @@ import Contact from "./pages/Contact";
 import Complaint from "./pages/Complaint";
 import Pagenotfound from "./pages/Pagenotfound";
 import Register from "./pages/Auth/Register";
+<<<<<<< HEAD
 import Login from "./pages/Auth/Login";
 
 
 
+=======
+>>>>>>> 652c7d130ad404f9ea5e55694578777ab9a92862
 
 function App() {
   return (

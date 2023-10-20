@@ -5,7 +5,7 @@ import Contact from "./pages/Contact";
 import Complaint from "./pages/Complaint";
 import Pagenotfound from "./pages/Pagenotfound";
 import Register from "./pages/Auth/Register";
-
+import Login from "./pages/Auth/Login";
 
 
 
@@ -15,10 +15,11 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="Login/Register" element={<Register />} />
-        <Route path="about" element={<AboutUs />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="complaint" element={<Complaint />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/complaint" element={<Complaint />} />
         <Route path="*" element={<Pagenotfound />} />
       </Routes>
     </>

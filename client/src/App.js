@@ -6,10 +6,6 @@ import Complaint from "./pages/Complaint";
 import Pagenotfound from "./pages/Pagenotfound";
 import Register from "./pages/Auth/Register";
 
-
-
-
-
 function App() {
   return (
     <>

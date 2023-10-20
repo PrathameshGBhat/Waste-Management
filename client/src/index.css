@@ -68,10 +68,9 @@
   background: linear-gradient(to right, #434343, #000000);
 }
 
-<<<<<<< HEAD
 /*=================================================================
 ==============================register page*/
-.register{
+.register {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +78,7 @@
   height: 70hv;
   flex-direction: column;
 }
-=======
+
 .footer a {
   text-decoration: none;
   color: white;
@@ -90,4 +89,11 @@
   color: #ffefba;
   border-bottom: 1px solid #ffefba;
 }
->>>>>>> a2bd7571ae28d50251bc44118e0f7206cb081be2
+
+.card{
+  height: 100%;
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: scale(1.15);
+}

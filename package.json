@@ -17,13 +17,9 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.6.2",
-<<<<<<< HEAD
     "morgan": "^1.10.0",
     "nodemon": "^1.19.4",
     "preline": "^1.9.0",
-=======
-    "nodemon": "^1.3.6",
->>>>>>> a2bd7571ae28d50251bc44118e0f7206cb081be2
     "react-icons": "^4.11.0"
   },
   "description": ""

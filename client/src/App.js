@@ -4,11 +4,7 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Complaint from "./pages/Complaint";
 import Pagenotfound from "./pages/Pagenotfound";
-import Register from "./pages/Auth/Register";
-<<<<<<< HEAD
-
-=======
->>>>>>> 06477fd4dfa73a3ee8cf83c47ff1ccee0fc5b3e7
+import Register from "./pages/Auth/Register.js";
 import Login from "./pages/Auth/Login";
 import ForgotPassword from "./pages/Auth/ForgotPassword";
 

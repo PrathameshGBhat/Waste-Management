@@ -8,10 +8,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< HEAD
-=======
     "aos": "^2.3.4",
->>>>>>> 06477fd4dfa73a3ee8cf83c47ff1ccee0fc5b3e7
     "axios": "^1.5.1",
     "bootstrap": "^5.3.2",
     "cloudinary": "^1.41.0",

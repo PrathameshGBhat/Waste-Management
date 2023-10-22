@@ -8,9 +8,10 @@ const Contact = () => {
       <div className="row contactus">
         <div className="col-md-6 ">
           <img
+            className="call"
             src={BBCall}
             alt="contactus"
-            style={{ width: " 70vh" }}
+            style={{ width: " 100vh" }}
           />
         </div>
         <div className="col-md-4 mt-4 p-5   ">

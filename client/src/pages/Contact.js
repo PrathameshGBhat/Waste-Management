@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
+import BBCall from "../images/BBCall.png";
 import { BiMailSend, BiPhoneCall, BiSupport } from "react-icons/bi";
 const Contact = () => {
   return (
@@ -7,7 +8,7 @@ const Contact = () => {
       <div className="row contactus ">
         <div className="col-md-6 ">
           <img
-            src="/images/BB Call.png"
+           src={BBCall}
             alt="contactus"
             style={{ width: " 70vh" }}
           />

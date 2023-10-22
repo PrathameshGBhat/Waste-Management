@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
+import Since2022 from "../images/Since2022.png";
 
 const AboutUs = () => {
   return (
@@ -7,7 +8,7 @@ const AboutUs = () => {
       <div className="row aboutus">
         <div className="col-md-6 ">
           <img
-            src="/images/about us.png"
+            src={Since2022}
             alt="contactus"
             style={{ width: "75%" }}
           />

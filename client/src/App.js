@@ -5,13 +5,10 @@ import Contact from "./pages/Contact";
 import Complaint from "./pages/Complaint";
 import Pagenotfound from "./pages/Pagenotfound";
 import Register from "./pages/Auth/Register";
-<<<<<<< HEAD
+
 import Login from "./pages/Auth/Login";
+import ForgotPassword from "./pages/Auth/ForgotPassword";
 
-
-
-=======
->>>>>>> 652c7d130ad404f9ea5e55694578777ab9a92862
 
 function App() {
   return (
@@ -19,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />

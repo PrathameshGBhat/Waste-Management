@@ -1,81 +1,85 @@
-
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Layout from "../../components/Layout/Layout";
-import axios from 'axios';
-import {useNavigate} from 'react-router-dom';
-import toast from 'react-hot-toast';
+import axios from "axios";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 import "../../styles/AuthStyles.css";
 import { useAuth } from "../../Context/auth";
-const Login = () => {
- 
-    const [email,setEmail] = useState("");
-    const [password,setPassword] = useState("");
-    const [auth,setAuth] = useAuth()
-    const navigate = useNavigate();
+import float1 from "../../videos/float1.mp4";
 
-     // form function
-     const handleSubmit = async (e) => {
-        e.preventDefault();
-        try{
-            const res = await axios.post('/api/v1/auth/login',
-            {email,password}
-            );
-            if(res && res.data.success){
-              toast.success(res.data.message);
-              setAuth({
-                ...auth,
-                user: res.data.user,
-                token: res.data.token,
-              });
-              localStorage.setItem('auth',JSON.stringify(res.data));
-              navigate('/');
-            }else{
-             toast.error(res.data.message);
-            }
-        }catch (error){
-          console.log(error);
-          toast.error("User Not Registered");
-        }
-      };
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [auth, setAuth] = useAuth();
+  const navigate = useNavigate();
+
+  // form function
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await axios.post("/api/v1/auth/login", { email, password });
+      if (res && res.data.success) {
+        toast.success(res.data.message);
+        setAuth({
+          ...auth,
+          user: res.data.user,
+          token: res.data.token,
+        });
+        localStorage.setItem("auth", JSON.stringify(res.data));
+        navigate("/");
+      } else {
+        toast.error(res.data.message);
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error("User Not Registered");
+    }
+  };
   return (
     <Layout title="Register - WM">
-        <div className="form-container">
-            <h1>Login Page</h1>
-           <form onSubmit={handleSubmit}>
-  <div className="mb-3">
-    
-   
-  </div>
-  <div className="mb-3">
-    <input type="email"
-    value={email}
-    onChange={(e) => setEmail(e.target.value)}
-    className="form-control"
-     id="exampleInputEmail1" 
-     placeholder="Enter Your Email"
-     required
-     />
-   
-  </div>
-  <div className="mb-3">
-    <input type="password"
-    value={password} 
-    onChange={(e) => setPassword(e.target.value)}
-    className="form-control" 
-    id="exampleInputPassword1" 
-    placeholder="Enter Your Password"
-    required
-    />
-  </div>
-  <div className="mb-3">
-  <button type="button" className="btn btn-primary" onClick={() => {navigate('/forgot-password')}}>Forgot Password</button>
-  </div>
-  <button type="submit" className="btn btn-primary">Login</button>
-</form>
+      <div className="form-container">
+        <video autoPlay muted loop className="bg-video">
+          <source src={float1} type="video/mp4" />
+        </video>
+        <h1 class="text-white">Login Page</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-3"></div>
+          <div className="mb-3">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="form-control"
+              id="exampleInputEmail1"
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="form-control"
+              id="exampleInputPassword1"
+              placeholder="Enter Your Password"
+              required
+            />
+          </div>
 
-        </div>
+          <button type="submit" className="btn btn-primary">
+            Login
+          </button>
+          <h2
+            className="text-dark"
+            style={{ fontSize: "12px", padding: "10px", marginTop: "10px" }}
+          >
+            Did not Register? <NavLink to="/register"> Register</NavLink>
+          </h2>
+        </form>
+      </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

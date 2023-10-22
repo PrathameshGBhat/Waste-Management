@@ -7,13 +7,16 @@
   justify-content: center;
   min-height: 70vh;
   flex-direction: column;
- 
 }
+
 
 .form-container form {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
   background-color: #fff;
+}
+.form-container form:hover {
+  box-shadow: 0 0 20px rgb(222, 139, 255);
 }
 
 .form-container form .title {
@@ -59,4 +62,4 @@
 
 .forgot-btn:hover {
   color: white !important;
-}  
+}

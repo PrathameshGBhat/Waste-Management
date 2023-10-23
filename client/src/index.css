@@ -112,9 +112,11 @@
 .card1{
   height: 100%;
   transition: all 0.3s;
+  overflow: hidden ;
 }
 .card1:hover {
   transform: scale(1.15);
+  overflow: hidden;
 }
 
 .card-img-top {

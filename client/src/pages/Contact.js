@@ -3,10 +3,16 @@ import Layout from "./../components/Layout/Layout";
 import BBCall from "../images/BBCall.png";
 import { BiMailSend, BiPhoneCall, BiSupport } from "react-icons/bi";
 import bubbles from "../videos/bubbles.mp4";
+import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <Layout title={"Contact us"}>
-      <div className="row contactus">
+      <motion.div
+        className="row contactus"
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ opacity: window.innerWidth, transition: { duration: 0.1 } }}
+      >
         <video autoPlay muted loop>
           <source src={bubbles} type="video/mp4" />
         </video>
@@ -28,7 +34,7 @@ const Contact = () => {
             <BiSupport /> : 1800-1800-1800 (toll free)
           </p>
         </div>
-      </div>
+      </motion.div>
     </Layout>
   );
 };

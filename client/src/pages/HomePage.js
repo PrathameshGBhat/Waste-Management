@@ -10,11 +10,10 @@ const HomePage = () => {
   const [auth, setAuth] = useAuth();
   return (
     <Layout>
-
-      <MainCorousal/>
-      
+      <MainCorousal />
+      <div>govt schemes</div>
       <Cards />
-      <Wastecards/>
+      <Wastecards />
     </Layout>
   );
 };

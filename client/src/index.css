@@ -73,8 +73,8 @@
 
 .corousal-img {
   margin: 5px;
-  width: 90%;
-  height: 350px;
+  width: 100%;
+  height: 500px;
   float: right;
 }
 
@@ -114,29 +114,32 @@
 
 /* cards */
 
-.card {
+.card1{
   height: 100%;
   transition: all 0.3s;
 }
-.card:hover {
+.card1:hover {
   transform: scale(1.15);
 }
 
-.card-img-top{
+.card-img-top {
   transition: all 0.3s;
 }
 .card-img-top:hover {
   transform: scale(1.15);
 }
 
-
-
 .contactus {
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  font-weight: 500;
+  font-size: large;
 }
 
+.contactus video {
+  z-index: -1;
+  position: absolute;
+}
 .call {
   margin: 10% 0;
   max-width: 70%;
@@ -145,10 +148,19 @@
 .aboutus {
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
 }
 
 .logo {
   margin: 10% 0;
+  border-radius: 5%;
+  width: 60%;
 }
 
+.aboutus video {
+  z-index: -1;
+  position: absolute;
+}
+
+.mainvideo{
+  position:absolute;
+}

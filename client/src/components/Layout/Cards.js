@@ -9,7 +9,7 @@ const Cards = () => {
         <div className="row">
           <div className="col-md-3 g-4 ">
             <div class="col">
-              <div class="card">
+              <div class="card1">
                 <img
                   src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2018/11/21/Pictures/ghaziabad_4ef53296-edac-11e8-86fe-bb1c4000c468.jpg"
                   class="wasteimg"
@@ -29,7 +29,7 @@ const Cards = () => {
           </div>
           <div className="col-md-3 g-4">
             <div class="col">
-              <div class="card">
+              <div class="card1">
                 <img
                   src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2017/09/07/Pictures/ht-pune_be55a16e-93d2-11e7-8e40-f0ddfb773b93.jpg"
                   class="wasteimg"
@@ -49,7 +49,7 @@ const Cards = () => {
           </div>
           <div className="col-md-3 g-4">
             <div class="col">
-              <div class="card">
+              <div class="card1">
                 <img
                   src="https://smartcity.ndmc.gov.in/images/Gallery/area-based-projects/physical-infrastructure-projects/bio-methanation-plant/bio-methanation-plant-1.jpg"
                   class="wasteimg"
@@ -69,7 +69,7 @@ const Cards = () => {
           </div>
           <div className="col-md-3 g-4">
             <div class="col">
-              <div class="card">
+              <div class="card1">
                 <img
                   src="https://www.drivespark.com/img/2019/08/electric-vehicles-for-waste-garbage-collection-coimbatore13-1566821611.jpg"
                   class="wasteimg"

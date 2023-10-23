@@ -4,14 +4,15 @@ import profile2 from "./images/profile2.jpg";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import Prathamesh from "../../../Owners/Prathamesh.jpg";
-import pra1 from "../../../Owners/pra1.jpg";
+import Pra2 from "../../../Owners/Pra2.jpg";
+import sujeeth from "../../../Owners/Sujeeth.png";
 const TeamCards = () => {
   return (
     <>
       <div className="container">
         <div className="card ">
           <div className="card-image">
-            <img src={pra1} alt="Profile image" />
+            <img src={Prathamesh} alt="Profile image" />
           </div>
           <p className="name">Prathamesh </p>
           <p>Full Stack developer</p>
@@ -34,10 +35,10 @@ const TeamCards = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src={profile2} alt="Profile image" />
+            <img src={sujeeth} alt="Profile image" />
           </div>
           <p className="name">Sujeeth</p>
-          <p>Back-End developer</p>
+          <p>Full Stack developer</p>
           <p className="card-text">
             2nd Year CS Student with a crazy aim for life and hardworking
           </p>

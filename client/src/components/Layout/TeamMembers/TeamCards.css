@@ -1,22 +1,22 @@
-.container{
+.container {
   display: flex;
 }
 
 .card {
-  position:relative;
+  position: relative;
   width: 300px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
   padding: 16px;
-  margin:  56px 24px;
+  margin: 56px 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: all;
 }
-.card:hover{
+.card:hover {
   transform: scale(1.15);
 }
 
@@ -30,7 +30,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
-  0 5px 20px 0 rgba(0, 0, 0, 0.1);
+    0 5px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .card-image img {
@@ -74,16 +74,15 @@ button:hover {
   opacity: 0.8;
 }
 
-button i {
-  color: #fff;
-  font-size: 1.4em;
-}
-
 /* Social media colors */
 button.github {
   background-color: #24292e;
-} 
+}
 
-button.linkedin  {
+button.linkedin {
   background-color: #1da1f2;
-} 
+}
+
+.card:hover {
+  box-shadow: 0 0 40px rgb(248, 248, 248);
+}

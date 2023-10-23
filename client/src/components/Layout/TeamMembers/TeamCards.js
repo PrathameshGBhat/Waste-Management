@@ -13,13 +13,14 @@ const TeamCards = () => {
           </div>
           <p className="name">Prathamesh </p>
           <p>Full Stack developer</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            delectus, mollitia tenetur libero quam recusandae alias in incidunt.
+          <p className="card-text">
+            2nd Year CS Student with a crazy aim for life and hardworking
           </p>
           <div className="socials">
             <button className="github">
-                <a href="https://github.com/PrathameshGBhat"><BsGithub/></a>
+              <a href="https://github.com/PrathameshGBhat">
+                <BsGithub />
+              </a>
             </button>
             <button className="linkedin">
               <BsLinkedin />
@@ -33,13 +34,14 @@ const TeamCards = () => {
           </div>
           <p className="name">Sujeeth</p>
           <p>Back-End developer</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            delectus, mollitia tenetur libero quam recusandae alias in incidunt.
+          <p className="card-text">
+            2nd Year CS Student with a crazy aim for life and hardworking
           </p>
           <div className="socials">
             <button className="github">
-              <a href="https://github.com/MrSujeeth"><BsGithub/></a>
+              <a href="https://github.com/MrSujeeth">
+                <BsGithub />
+              </a>
             </button>
             <button className="linkedin">
               <BsLinkedin />

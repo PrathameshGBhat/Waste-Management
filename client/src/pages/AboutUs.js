@@ -26,7 +26,7 @@ const AboutUs = () => {
             // style={{ width: "40%" }}
           />
         </div>
-        <div className="col-md-4">
+        <div className="col-md-5">
           <div className="text-justify mt-4 ">
             <TeamCards />
           </div>

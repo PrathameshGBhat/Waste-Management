@@ -4,12 +4,12 @@
 
 .card {
   position: relative;
-  width: 300px;
+  width: 350px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
   padding: 16px;
-  margin: 56px 16px;
+  margin: 56px 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +80,7 @@ button.github {
 }
 
 button.linkedin {
-  background-color: #1da1f2;
+  background-color: #91d0f7;
 }
 
 .card:hover {

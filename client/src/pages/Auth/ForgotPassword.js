@@ -4,6 +4,7 @@ import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
 import toast from 'react-hot-toast';
 import "../../styles/AuthStyles.css";
+import FOR from "../../videos/FOR.mp4";
 
 
 const ForgotPassword = () => {
@@ -33,6 +34,9 @@ const ForgotPassword = () => {
           };
   return (
     <Layout title={'Forgot Password - WM'}>
+      <video autoPlay muted loop className="bg-video">
+          <source src={FOR} type="video/mp4" />
+      </video>
          <div className="form-container">
            <form onSubmit={handleSubmit}>
            <h1 className="title">Reset Password</h1>

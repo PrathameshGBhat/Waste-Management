@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 import "../../styles/AuthStyles.css";
 import { useAuth } from "../../Context/auth";
 import float1 from "../../videos/float1.mp4";
-
+import { motion } from "framer-motion";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -37,7 +37,12 @@ const Login = () => {
   };
   return (
     <Layout title="Register - WM">
-      <div className="form-container">
+      <motion.div
+        className="form-container"
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ opacity: window.innerWidth, transition: { duration: 0.1 } }}
+      >
         <video autoPlay muted loop className="bg-video">
           <source src={float1} type="video/mp4" />
         </video>
@@ -78,7 +83,7 @@ const Login = () => {
             Did not Register? <NavLink to="/register"> Register</NavLink>
           </h2>
         </form>
-      </div>
+      </motion.div>
     </Layout>
   );
 };

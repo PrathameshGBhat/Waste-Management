@@ -10,7 +10,7 @@ const items = MainCorousalData.map((item) => (
 const MainCorousal = () => (
   <AliceCarousel
     mouseTracking
-    items={items}
+    items={items} 
     disableButtonsControls
     autoPlay
     autoPlayInterval={1000}

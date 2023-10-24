@@ -6,15 +6,21 @@ import Cards from "../components/Layout/Cards";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Wastecards from "../components/Layout/Wastecards";
 
+
 const HomePage = () => {
   const [auth, setAuth] = useAuth();
   return (
     <Layout>
-
-      <MainCorousal/>
-      
-      <Cards />
-      <Wastecards/>
+      <div>
+        <MainCorousal />
+      </div>
+      <div>govt schemes</div>
+      <div>
+        <Cards />
+      </div>
+      <div>
+      <Wastecards />
+      </div>
     </Layout>
   );
 };

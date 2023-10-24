@@ -5,7 +5,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import "../../styles/AuthStyles.css";
 import waste from "../../videos/waste.mp4";
-
+import { motion } from "framer-motion";
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -39,7 +39,12 @@ const Register = () => {
 
   return (
     <Layout title="Register - WM ">
-      <div className="form-container">
+      <motion.div
+        className="form-container"
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ opacity: window.innerWidth, transition: { duration: 0.1 } }}
+      >
         <video autoPlay muted loop className="bg-video">
           <source src={waste} type="video/mp4" />
         </video>
@@ -105,12 +110,12 @@ const Register = () => {
           </button>
           <h2
             className="text-dark"
-            style={{ fontSize: "12px", padding: "5px",marginTop:"10px"}}
+            style={{ fontSize: "12px", padding: "5px", marginTop: "10px" }}
           >
             Already Registered? <NavLink to="/login"> Login</NavLink>
           </h2>
         </form>
-      </div>
+      </motion.div>
     </Layout>
   );
 };

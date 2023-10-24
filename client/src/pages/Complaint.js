@@ -1,8 +1,9 @@
-import React, { useRef} from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Layout from "../components/Layout/Layout";
 import "../styles/com.css";
 import noplastic from "../../src/noplastic.mp4";
+import { motion } from "framer-motion";
 
 const Complaint = () => {
   const form = useRef();
@@ -30,29 +31,53 @@ const Complaint = () => {
   };
   return (
     <Layout>
-      <div className="form-container">
-      <video autoPlay loop muted >
-       <source src={noplastic} type="video/mp4"/>
-      </video>
-      <h1>Grievance Box</h1>
-       <form ref={form} onSubmit={sendEmail}>
-        <div className="mb-3">
-        <label>Name</label>
-        <input type="text" name="user_name" className="form-control"  placeholder="Enter Your Name" required/>
-        </div>
-        <div className="mb-3">
-        <label>Email</label>
-        <input type="email" name="user_email" className="form-control" placeholder="Enter Your Email" required/>
-        </div>
-        <div className="mb-3">
-        <label>Complaint</label>
-        <textarea name="complaint" className="form-control" placeholder="Enter Your Complaint" required/>
-        </div>
-        <div>
-        <button type="submit" className="btn btn-primary">Send</button>
-        </div>
-      </form>
-      </div>
+      <motion.div
+        className="form-container"
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ opacity: window.innerWidth, transition: { duration: 0.1 } }}
+      >
+        <video autoPlay loop muted>
+          <source src={noplastic} type="video/mp4" />
+        </video>
+        <h1>Grievance Box</h1>
+        <form ref={form} onSubmit={sendEmail}>
+          <div className="mb-3">
+            <label>Name</label>
+            <input
+              type="text"
+              name="user_name"
+              className="form-control"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <label>Email</label>
+            <input
+              type="email"
+              name="user_email"
+              className="form-control"
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <label>Complaint</label>
+            <textarea
+              name="complaint"
+              className="form-control"
+              placeholder="Enter Your Complaint"
+              required
+            />
+          </div>
+          <div>
+            <button type="submit" className="btn btn-primary">
+              Send
+            </button>
+          </div>
+        </form>
+      </motion.div>
     </Layout>
   );
 };

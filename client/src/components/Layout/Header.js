@@ -84,7 +84,7 @@ const Header = () => {
                       to="/login"
                       className="nav-link"
                     >
-                      Logout
+                      Logout 🚪
                     </NavLink>
                   </li>
                 </>

@@ -4,7 +4,7 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 const Cards = () => {
   return (
     <>
-      <h1 className="text-center text-success my-5">Processing and Disposal</h1>
+      <h1 className="text-center text-info my-5">Processing and Disposal</h1>
       <div className="container" >
         <div className="row">
           <div className="col-md-3 g-4 ">

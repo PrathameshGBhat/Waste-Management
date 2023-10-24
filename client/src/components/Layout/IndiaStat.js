@@ -1,3 +1,4 @@
+import { sign } from "jsonwebtoken";
 import React from "react";
 
 const IndiaStat = () => {
@@ -19,7 +20,13 @@ const IndiaStat = () => {
           </div>
           <div className="col-md-6 g-4">
             <div class="col">
-              <p className="text-stat p-4" style={{ fontFamily: "Onest" }}>
+              <p
+                className="text-stat p-4"
+                style={{
+                  fontFamily: "Onest",
+                  marginTop: "30px",
+                }}
+              >
                 Waste generation rate depends on factors such as population
                 density, economic status, level of commercial activity, culture
                 and city/region. Figure 1 provides data on MSW generation in

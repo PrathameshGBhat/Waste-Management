@@ -4,7 +4,7 @@ import Layout from "../components/Layout/Layout";
 import "../styles/com.css";
 import noplastic from "../../src/noplastic.mp4";
 import { motion } from "framer-motion";
-
+import toast from "react-hot-toast";
 const Complaint = () => {
   const form = useRef();
 
@@ -13,14 +13,15 @@ const Complaint = () => {
 
     emailjs
       .sendForm(
-        "service_oxk2x3d",
-        "template_1eikuht",
+        "service_6d6w7mr",
+        "template_7spfciy",
         form.current,
-        "6I5qAtnI0gbW7VEZe"
+        "ylBS3_uk4xs27mOrH"
       )
       .then(
         (result) => {
           console.log(result.text);
+          toast.success("Complaint sent");
           console.log("message sent");
           e.target.reset();
         },

@@ -5,21 +5,22 @@ import { useAuth } from "../Context/auth";
 import Cards from "../components/Layout/Cards";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Wastecards from "../components/Layout/Wastecards";
-
+import IndiaStat from "../components/Layout/IndiaStat";
 
 const HomePage = () => {
   const [auth, setAuth] = useAuth();
   return (
     <Layout>
-      <div>
-        <MainCorousal />
-      </div>
+      <MainCorousal />
       <div>govt schemes</div>
       <div>
         <Cards />
       </div>
       <div>
-      <Wastecards />
+        <IndiaStat />
+      </div>
+      <div>
+        <Wastecards />
       </div>
     </Layout>
   );

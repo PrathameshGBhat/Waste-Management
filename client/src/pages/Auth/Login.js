@@ -71,7 +71,13 @@ const Login = () => {
               required
             />
             <div>
-            <NavLink to="/forgot-password"> Forgot Password</NavLink></div>
+              <h2
+                className="text-dark"
+                style={{ fontSize: "13px", padding: "6px", marginTop: "10px" }}
+              >
+                <NavLink to="/forgot-password"> Forgot Password ? </NavLink>
+              </h2>
+            </div>
           </div>
           <button type="submit" className="btn btn-primary">
             Login

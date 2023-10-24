@@ -123,6 +123,7 @@
 
 .card-img-top {
   transition: all 0.3s;
+  
 }
 .card-img-top:hover {
   transform: scale(1.15);

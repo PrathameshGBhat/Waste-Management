@@ -12,14 +12,13 @@ const HomePage = () => {
   return (
     <Layout>
       <MainCorousal />
-      <div>govt schemes</div>
       <div>
         <Cards />
       </div>
       <div>
         <IndiaStat />
       </div>
-      <div>
+      <div >
         <Wastecards />
       </div>
     </Layout>

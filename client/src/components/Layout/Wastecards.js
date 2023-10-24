@@ -6,8 +6,8 @@ const Wastecards = () => {
       <h1 className="text-center text-success my-5">
         TYPES OF DOMESTIC WASTES
       </h1>
-      <div className="container">
-        <div className="row row-cols-1 row-cols-md-4 g-4 mt-4">
+      <div className="container"style={{justifyContent:"center"}}> 
+        <div className="row row-cols-1 row-cols-md-4 g-4 ">
           <div className="col">
             <div className="Wastecard">
               <img

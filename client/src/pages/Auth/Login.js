@@ -65,8 +65,9 @@ const Login = () => {
               placeholder="Enter Your Password"
               required
             />
+            <div>
+            <NavLink to="/forgot-password"> Forgot Password</NavLink></div>
           </div>
-
           <button type="submit" className="btn btn-primary">
             Login
           </button>

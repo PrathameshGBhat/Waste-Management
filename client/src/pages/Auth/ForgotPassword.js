@@ -16,11 +16,11 @@ const ForgotPassword = () => {
          const handleSubmit = async (e) => {
             e.preventDefault();
             try{
-                const res = await axios.post('/api/v1/auth/forgot-password',
+                const res = await axios.post("/api/v1/auth/forgot-password",
                 {email,newPassword,answer,}
                 );
                 if(res && res.data.success){
-                  toast.success(res.data.message);
+                  toast.success(res.data && res.data.message);
                 
                   navigate('/login');
                 }else{
@@ -35,7 +35,7 @@ const ForgotPassword = () => {
     <Layout title={'Forgot Password - WM'}>
          <div className="form-container">
            <form onSubmit={handleSubmit}>
-           <h1>Reset Password</h1>
+           <h1 className="title">Reset Password</h1>
   <div className="mb-3">
     
    
@@ -78,7 +78,7 @@ const ForgotPassword = () => {
 
         </div>
     </Layout>
-  )
-}
+  );
+};
 
 export default ForgotPassword;

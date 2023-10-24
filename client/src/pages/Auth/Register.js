@@ -11,6 +11,8 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [address, setAddress] = useState("");
+  const [answer, setAnswer] = useState("");
+
   const navigate = useNavigate();
   // form function
   const handleSubmit = async (e) => {
@@ -21,6 +23,7 @@ const Register = () => {
         email,
         password,
         address,
+        answer,
       });
       if (res && res.data.success) {
         toast.success(res.data.message);
@@ -83,6 +86,17 @@ const Register = () => {
               className="form-control"
               id="exampleInputEmail1"
               placeholder="Enter Your Address"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <input
+              type="text"
+              value={answer}
+              onChange={(e) => setAnswer(e.target.value)}
+              className="form-control"
+              id="exampleInputEmail1"
+              placeholder="What is Your Favorite Color"
               required
             />
           </div>

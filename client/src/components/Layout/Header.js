@@ -44,11 +44,6 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/complaint" className="nav-link">
-                  Complaint
-                </NavLink>
-              </li>
-              <li className="nav-item">
                 <NavLink to="/about" className="nav-link">
                   About
                 </NavLink>
@@ -78,6 +73,11 @@ const Header = () => {
                 </>
               ) : (
                 <>
+                 <li className="nav-item">
+                <NavLink to="/complaint" className="nav-link">
+                  Complaint
+                </NavLink>
+              </li>
                   <li className="nav-item">
                     <NavLink
                       onClick={handleLogout}

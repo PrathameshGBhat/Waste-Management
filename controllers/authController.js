@@ -40,6 +40,7 @@ export const registerController = async (req, res) => {
       email,
       address,
       password: hashedPassword,
+      answer,
     }).save();
 
     res.status(201).send({
@@ -128,11 +129,11 @@ export const forgotPasswordController = async (req,res) => {
     if(!user){
       return res.status(404).send({
         success:false,
-        message:"Wrong Email Or Answer"
-      })
+        message:"Wrong Email Or Answer",
+      });
     }
-    const hashed = await hashedPassword(newPassword)
-    await userModel.findByIdAndUpdate(user._id,{password:hashed})
+    const hashed = await hashedPassword(newPassword);
+    await userModel.findByIdAndUpdate(user._id,{password:hashed});
     res.status(200).send({
       success:true,
       message:"Password Reset Successfully",

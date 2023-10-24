@@ -3,7 +3,7 @@ import React from "react";
 const IndiaStat = () => {
   return (
     <>
-      <h1 className="Stat-text text-center text-success my-5 ">
+      <h1 className="Stat-text text-center text-info my-5 ">
         Statistics on waste generation and waste characterization data
       </h1>
 

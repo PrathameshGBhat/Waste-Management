@@ -4,7 +4,7 @@ import { FaTrash } from "react-icons/fa";
 import { useAuth } from "../../Context/auth";
 import toast from "react-hot-toast";
 import { BiLogInCircle } from "react-icons/bi";
-import { BsDatabaseExclamation } from "react-icons/bs";
+import { GiExitDoor } from "react-icons/gi";
 
 const Header = () => {
   const [auth, setAuth] = useAuth();
@@ -73,18 +73,19 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                 <li className="nav-item">
-                <NavLink to="/complaint" className="nav-link">
-                  Complaint
-                </NavLink>
-              </li>
+                  <li className="nav-item">
+                    <NavLink to="/complaint" className="nav-link">
+                      Complaint
+                    </NavLink>
+                  </li>
                   <li className="nav-item">
                     <NavLink
                       onClick={handleLogout}
                       to="/login"
                       className="nav-link"
                     >
-                      Logout 🚪
+                      <GiExitDoor />
+                      Logout
                     </NavLink>
                   </li>
                 </>

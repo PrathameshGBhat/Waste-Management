@@ -1,10 +1,8 @@
 import React from "react";
 import "../TeamMembers/TeamCards.css";
-import profile2 from "./images/profile2.jpg";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import Prathamesh from "../../../Owners/Prathamesh.jpg";
-import Pra2 from "../../../Owners/Pra2.jpg";
 import sujeeth from "../../../Owners/Sujeeth.png";
 const TeamCards = () => {
   return (

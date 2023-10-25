@@ -5,13 +5,12 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 const Footer = () => {
   return (
     <>
-      {" "}
-      <div className="footer mt-5" >
+      <div className="footer mt-5">
         <h1 className="text-center">
           All Rights Reserved &copy; BrokenBrothers
         </h1>
-        <div style={{marginLeft:"45%" , fontSize:'1.5em'}}>
-          <BsInstagram /> <AiFillTwitterCircle />
+        <div style={{ marginLeft: "50%", fontSize: "1.5em" }}>
+          <BsInstagram /> | <AiFillTwitterCircle />
         </div>
       </div>
     </>

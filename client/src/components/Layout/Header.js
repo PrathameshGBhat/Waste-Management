@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaTrash } from "react-icons/fa";
 import { useAuth } from "../../Context/auth";
 import toast from "react-hot-toast";
@@ -73,11 +73,26 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  <li className="nav-item">
-                    <NavLink to="/complaint" className="nav-link">
-                      Complaint
-                    </NavLink>
+                  <li className="nav-item dropdown">
+                    <Link
+                      className="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Services
+                    </Link>
+                    <ul className="dropdown-menu">
+                      <NavLink to="/Complaint" className="nav-link">
+                        Complaint
+                      </NavLink>
+                      <NavLink to="/remainder" className="nav-link">
+                        remainder
+                      </NavLink>
+                    </ul>
                   </li>
+
                   <li className="nav-item">
                     <NavLink
                       onClick={handleLogout}

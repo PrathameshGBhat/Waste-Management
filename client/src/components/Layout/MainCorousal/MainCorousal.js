@@ -13,7 +13,7 @@ const MainCorousal = () => (
     items={items}
     disableButtonsControls
     autoPlay
-    autoPlayInterval={1000}
+    autoPlayInterval={1000}  
     infinite
   />
 );

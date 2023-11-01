@@ -8,10 +8,10 @@ const TypeWrite = () => {
         style={{
           paddingTop: "6rem",
           margin: "10px",
-          fontFamily:"Poppins",
+          fontFamily: "Poppins",
           fontWeight: "bold",
           fontSize: "50px",
-          color:"blue",
+          color: "blue",
         }}
       >
         3 R's OF LIFE

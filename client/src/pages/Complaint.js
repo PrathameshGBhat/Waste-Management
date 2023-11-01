@@ -5,6 +5,7 @@ import "../styles/com.css";
 import noplastic from "../../src/noplastic.mp4";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
+
 const Complaint = () => {
   const form = useRef();
 
@@ -13,8 +14,8 @@ const Complaint = () => {
 
     emailjs
       .sendForm(
-        "service_6d6w7mr",
-        "template_7spfciy",
+        "service_64724ir",
+        "template_eemhl5x",
         form.current,
         "ylBS3_uk4xs27mOrH"
       )

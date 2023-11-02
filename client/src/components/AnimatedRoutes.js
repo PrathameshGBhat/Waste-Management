@@ -9,6 +9,7 @@ import Register from "../pages/Auth/Register.js";
 import Login from "../pages/Auth/Login";
 import ForgotPassword from "../pages/Auth/ForgotPassword";
 import { AnimatePresence } from "framer-motion";
+import Agents from "../pages/Agents.js";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -22,6 +23,7 @@ const AnimatedRoutes = () => {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/complaint" element={<Complaint />} />
+        <Route path="/agents" element={<Agents />} />
         <Route path="*" element={<Pagenotfound />} />
       </Routes>
     </AnimatePresence>

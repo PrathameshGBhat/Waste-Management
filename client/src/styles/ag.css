@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .flex{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  
+  
+  .container11 {
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+  }
+  
+  .container11:hover > .card007 {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+
+  .card007 {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front1,
+  .back1 {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front1 {
+    background-image: url("../styles/PicCards/wastepic.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .back1 {
+    background-color: #bfafaf;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .front2,
+  .back2 {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front2 {
+    background-image: url("../styles/PicCards/wastepic1.png");
+  }
+  
+  .back2 {
+    background-color: #faacac;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .front3,
+  .back3 {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front3 {
+    background-image: url("../styles/PicCards/wastepic2.png");
+  }
+  
+  .back3 {
+    background-color: #faa35c;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .front4,
+  .back4 {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front4 {
+    background-image: url("../styles/PicCards/wastepic7.png");
+  }
+  
+  .back4 {
+    background-color: #4fc553;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }

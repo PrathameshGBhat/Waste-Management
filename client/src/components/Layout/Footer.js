@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <div className="footer mt-5">
         <h1 className="text-center">
-          All Rights Reserved &copy; BrokenBrothers
+          All Rights Reserved &copy; BBTrash
         </h1>
         <div style={{ marginLeft: "50%", fontSize: "1.5em" }}>
           <BsInstagram /> | <AiFillTwitterCircle />
